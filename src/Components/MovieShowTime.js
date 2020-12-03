@@ -33,11 +33,13 @@ export default class MovieShowTime extends Component {
       <div className="tab-pane fade show active" id="mon" role="tabpanel" aria-labelledby="profile-tab">
         <div className="row showTime__movie my-4">
           <div className="col-2">
-            <img src="./img/movie-11.jpg" className="img-fluid" alt />
+            <a href="#"><img src="./img/movie-11.jpg" className="img-fluid" alt /></a>
           </div>
           <div className="col-10">
             <div className="showTime__detail ">
-              <span>ACTION, ADVENTURE, FANTASY</span>
+              <span>
+                ACTION, ADVENTURE, FANTASY
+              </span>
               <h1 className="display-4">It's over</h1>
               <p>European mercenaries searching for black powder become embroiled in the defense of It's over of China against a horde of monstrous creatures.</p>
               <a className="d-block mb-4" href="#">FULL SYNOPSIS 
@@ -45,7 +47,7 @@ export default class MovieShowTime extends Component {
               <div className="showTime__list d-flex justify-content-between align-items-center">
                 <div>
                   <i className="fa fa-clock" />
-                  <span>VIEWING TIMES</span>
+                  <span className="showTime__label">VIEWING TIMES</span>
                   <button className="btn mr-2">14:25</button>
                   <button className="btn mr-2">16:45</button>
                   <button className="btn mr-2">17:25</button>
@@ -58,7 +60,7 @@ export default class MovieShowTime extends Component {
         </div>
         <div className="row showTime__movie my-4">
           <div className="col-2">
-            <img src="./img/movie-12.jpg" className="img-fluid" alt />
+            <a href="#"><img src="./img/movie-12.jpg" className="img-fluid" alt /></a>
           </div>
           <div className="col-10">
             <div className="showTime__detail ">
@@ -70,7 +72,7 @@ export default class MovieShowTime extends Component {
               <div className="showTime__list d-flex justify-content-between align-items-center">
                 <div>
                   <i className="fa fa-clock" />
-                  <span>VIEWING TIMES</span>
+                  <span className="showTime__label">VIEWING TIMES</span>
                   <button className="btn mr-2">14:25</button>
                   <button className="btn mr-2">16:45</button>
                   <button className="btn mr-2">17:25</button>
@@ -83,7 +85,7 @@ export default class MovieShowTime extends Component {
         </div>
         <div className="row showTime__movie my-4">
           <div className="col-2">
-            <img src="./img/movie-13.jpg" className="img-fluid" alt />
+          <a href="#"><img src="./img/movie-13.jpg" className="img-fluid" alt /></a>
           </div>
           <div className="col-10">
             <div className="showTime__detail ">
@@ -95,7 +97,7 @@ export default class MovieShowTime extends Component {
               <div className="showTime__list d-flex justify-content-between align-items-center">
                 <div>
                   <i className="fa fa-clock" />
-                  <span>VIEWING TIMES</span>
+                  <span className="showTime__label">VIEWING TIMES</span>
                   <button className="btn mr-2">14:25</button>
                   <button className="btn mr-2">16:45</button>
                   <button className="btn mr-2">17:25</button>

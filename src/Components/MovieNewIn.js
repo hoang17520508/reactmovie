@@ -16,6 +16,7 @@ export default class MovieNewIn extends Component {
             <i className="fa fa-play" />
             <a href="#">Read More</a>
             <p>Release: 7 Mar 2020</p>
+            <button className="newIn__BookTicket__btn">Đặt vé</button>
           </div>
         </div>
         <p className="newIn__item__title">The last post</p>
@@ -37,9 +38,10 @@ export default class MovieNewIn extends Component {
             <i className="fa fa-play" />
             <a href="#">Read More</a>
             <p>Release: 7 Mar 2020</p>
+            <button className="newIn__BookTicket__btn">Đặt vé</button>
           </div>
         </div>
-        <p>The last post</p>
+        <p className="newIn__item__title">The last post</p>
         <p>
           <i className="fa fa-star" />
           <i className="fa fa-star" />
@@ -58,9 +60,10 @@ export default class MovieNewIn extends Component {
             <i className="fa fa-play" />
             <a href="#">Read More</a>
             <p>Release: 7 Mar 2020</p>
+            <button className="newIn__BookTicket__btn">Đặt vé</button>
           </div>
         </div>
-        <p>The last post</p>
+        <p className="newIn__item__title">The last post</p>
         <p>
           <i className="fa fa-star" />
           <i className="fa fa-star" />
@@ -79,9 +82,10 @@ export default class MovieNewIn extends Component {
             <i className="fa fa-play" />
             <a href="#">Read More</a>
             <p>Release: 7 Mar 2020</p>
+            <button className="newIn__BookTicket__btn">Đặt vé</button>
           </div>
         </div>
-        <p>The last post</p>
+        <p className="newIn__item__title">The last post</p>
         <p>
           <i className="fa fa-star" />
           <i className="fa fa-star" />
