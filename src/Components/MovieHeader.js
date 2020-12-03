@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Link,NavLink} from 'react-router-dom';
+
 
 class MovieHeader extends Component {
     render() {
@@ -9,7 +11,8 @@ class MovieHeader extends Component {
     <p className=" text-white text-right mb-0">
       <i className="fas fa-phone-alt" />
       <span className="mx-3 border-right pr-3">01212001011</span>
-      <i className="fa fa-search" />
+      <i className="fa fa-user" />
+
     </p>
     <nav className="navbar navbar-expand-lg navbar-dark  ">
       <a className="navbar-brand" href="#">
@@ -20,19 +23,19 @@ class MovieHeader extends Component {
       <div className="collapse navbar-collapse" id="movieNavBar">
         <ul className="navbar-nav ml-auto ">
           <li className="nav-item active">
-            <a className="nav-link" href="#">HOME</a>
+            <Link to="/" className="nav-link" href="#">HOME</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">WHAT'S ON</a>
+            <a  className="nav-link" href="#newin">NEW</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">SHORTCODE</a>
+            <Link to="/test" className="nav-link" href="#coming">WHAT'S ON</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">NEW</a>
+            <Link to="/login" className="nav-link" href="#login">LOGIN</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">CONTACT</a>
+            <Link to="/signup" className="nav-link" href="#signup">SIGNUP</Link>
           </li>
         </ul>
       </div>
