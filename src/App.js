@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import MovieHeader from './Components/MovieHeader';
+import MovieCarousel from './Components/MovieCarousel';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import MovieNewIn from './Components/MovieNewIn';
+import MovieShowTime from './Components/MovieShowTime';
+import MovieComingSoon from './Components/MovieComingSoon';
+import MovieContact from './Components/MovieContact';
+import MovieFooter from './Components/MovieFooter';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <MovieHeader/>
+     <MovieCarousel/>
+     <MovieNewIn/>
+     <MovieShowTime/>
+     <MovieComingSoon/>
+     <MovieContact/>
+     <MovieFooter/>
+     
     </div>
   );
 }
