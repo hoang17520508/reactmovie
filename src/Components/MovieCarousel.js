@@ -48,7 +48,7 @@ class MovieCarousel extends Component {
           <h2>End of the World: Part II</h2>
           <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
             quam littera gothica, quam nunc putamus parum.</p>
-          <div>
+          <div> 
             <span className="border rounded-circle">PG</span>
             <button className="btn-trailer"><i className="fa fa-play" />Play Trailer</button>
           </div>
