@@ -12,14 +12,14 @@ export default class MovieHome extends Component {
     render() {
         return (
             <div>
-               <MovieCarousel/>
-                <MovieNewIn/>
-                
-        <MovieShowTime/>
-        <MovieComingSoon/>
-        <MovieContact/>
-        <MovieFooter/>
-        
+                <MovieCarousel />
+                <MovieNewIn />
+                 
+                <MovieShowTime />
+                <MovieComingSoon />
+                <MovieContact />
+                <MovieFooter />
+
             </div>
         )
     }
