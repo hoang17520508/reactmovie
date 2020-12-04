@@ -4,7 +4,7 @@ export default class MovieComingSoon extends Component {
     render() {
         return (
             <div>
-          <section className="comingSoon text-left">
+          <section className="comingSoon text-left" id="coming">
   <div className="coming__bg">
     <div className="container">
       <h1 className="section-title line">Coming Soon</h1>
