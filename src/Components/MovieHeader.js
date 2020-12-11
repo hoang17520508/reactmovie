@@ -9,8 +9,8 @@ class MovieHeader extends Component {
       <header className=" header">
   <div className="container ">
     <p className=" text-white text-right mb-0">
-      <i className="fas fa-phone-alt" />
-      <span className="mx-3 border-right pr-3">01212001011</span>
+      
+      <span className="mx-3 border-right pr-3 text-dark">AdminUser</span>
       <i className="fa fa-user" />
 
     </p>
@@ -26,10 +26,10 @@ class MovieHeader extends Component {
             <Link to="/" className="nav-link" href="#">HOME</Link>
           </li>
           <li className="nav-item">
-            <a  className="nav-link" href="#newin">NEW</a>
+            <Link to="/test" className="nav-link" href="#newin">NEWS</Link>
           </li>
           <li className="nav-item">
-            <Link to="/test" className="nav-link" href="#coming">WHAT'S ON</Link>
+            <Link to="/whaton" className="nav-link" href="#coming">WHAT'S ON</Link>
           </li>
           <li className="nav-item">
             <Link to="/login" className="nav-link" href="#login">LOGIN</Link>

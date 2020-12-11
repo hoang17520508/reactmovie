@@ -7,7 +7,7 @@ export default class MovieContact extends Component {
                <section className="contact">
   <div className="row container-fluid">
     <div className="col-12">
-      <p>Need help? Contact our support team on</p>
+      <p>Contact our support team on</p>
       <p>0330 123 4567</p>
     </div>
   </div>

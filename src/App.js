@@ -13,6 +13,8 @@ import MovieSignUp from './Components/MovieSignUp';
 import { BrowserRouter, Route,Switch } from "react-router-dom";
 import MovieHome from './Components/MovieHome';
 import MovieTest from './Components/Data/MovieTest';
+import MovieWhaton from './Components/MovieWhaton';
+import BookingTicket from './BookingTicket/BookingTicket';
 
 
 
@@ -27,7 +29,8 @@ function App() {
       <Switch>
       <Route path="/login" component={MovieLogin} />
       <Route path="/signup" component={MovieSignUp} />
-      <Route path="/test" component={MovieTest} />
+      <Route path="/test" component={BookingTicket} />
+      <Route path="/whaton"   component={MovieWhaton} />
       <Route path="/" component={MovieHome} />
       
       
