@@ -26,7 +26,7 @@ class MovieHeader extends Component {
             <Link to="/" className="nav-link" href="#">HOME</Link>
           </li>
           <li className="nav-item">
-            <Link to="/test" className="nav-link" href="#newin">NEWS</Link>
+            <Link to="/new" className="nav-link" href="#newin">NEWS</Link>
           </li>
           <li className="nav-item">
             <Link to="/whaton" className="nav-link" href="#coming">WHAT'S ON</Link>

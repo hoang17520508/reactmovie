@@ -15,6 +15,7 @@ import MovieHome from './Components/MovieHome';
 import MovieTest from './Components/Data/MovieTest';
 import MovieWhaton from './Components/MovieWhaton';
 import BookingTicket from './BookingTicket/BookingTicket';
+import NewsPage from './News/NewsPage';
 
 
 
@@ -29,7 +30,7 @@ function App() {
       <Switch>
       <Route path="/login" component={MovieLogin} />
       <Route path="/signup" component={MovieSignUp} />
-      <Route path="/test" component={BookingTicket} />
+      <Route path="/new" component={NewsPage} />
       <Route path="/whaton"   component={MovieWhaton} />
       <Route path="/" component={MovieHome} />
       
