@@ -1,0 +1,11 @@
+.phongve .gheVip{
+    background-color: rgb(245, 173, 39);
+    cursor: pointer;
+  }
+  .phongve .gheDaDat{
+    cursor:no-drop !important;
+    background-color: rgb(138, 26, 26);
+  }
+  .phongve .gheDangDat{
+    background-color: green;
+  }

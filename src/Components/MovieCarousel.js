@@ -14,45 +14,18 @@ class MovieCarousel extends Component {
     </ol>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src="./img/hero-1.jpg" className="d-block w-100" alt="..." />
-        <div className="container  carousel-caption d-none d-md-block">
-          <p className="text-warning">ACTION, ADVENTURE, FANTASY</p>
-          <h2 className="display-4">End of the World: Part II</h2>
-          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
-            quam littera gothica, quam nunc putamus parum.</p>
-          <div>
-            <span className="border rounded-circle  ">PG</span>
-            <button className="btn-trailer"><i className="fa fa-play mr-2" />Play Trailer</button>
-          </div>
-        </div>
+        <img src="./img/ca2.png" className="d-block w-100" alt="..." />
+        
         <div className="overlay" />
       </div>
       <div className="carousel-item">
-        <img src="./img/hero-2.jpg" className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
-          <p>ACTION, ADVENTURE, FANTASY</p>
-          <h2>End of the World: Part II</h2>
-          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
-            quam littera gothica, quam nunc putamus parum.</p>
-          <div>
-            <span className="border rounded-circle">PG</span>
-            <button className="btn-trailer"><i className="fa fa-play" />Play Trailer</button>
-          </div>
-        </div>
+        <img src="./img/ca1.jpg" className="d-block w-100" alt="..." />
+        
         <div className="overlay" />
       </div>
       <div className="carousel-item">
-        <img src="./img/hero-3.jpg" className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
-          <p>ACTION, ADVENTURE, FANTASY</p>
-          <h2>End of the World: Part II</h2>
-          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
-            quam littera gothica, quam nunc putamus parum.</p>
-          <div> 
-            <span className="border rounded-circle">PG</span>
-            <button className="btn-trailer"><i className="fa fa-play" />Play Trailer</button>
-          </div>
-        </div>
+        <img src="./img/ca3.jpg" className="d-block w-100" alt="..." />
+       
         <div className="overlay" />
       </div>
     </div>

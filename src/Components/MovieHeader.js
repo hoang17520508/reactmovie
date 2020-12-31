@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import {Link,NavLink} from 'react-router-dom';
-
+import {connect} from 'react-redux'
+import {logout} from '../redux/actions/UserAction'
+import MovieBookingHistory from './MovieBookingHistory';
 
 class MovieHeader extends Component {
+  logoutWeb=()=>{
+    this.props.dispatch(logout());
+  }
     render() {
         return (
             <div>
@@ -10,8 +15,20 @@ class MovieHeader extends Component {
   <div className="container ">
     <p className=" text-white text-right mb-0">
       
-      <span className="mx-3 border-right pr-3 text-dark">AdminUser</span>
-      <i className="fa fa-user" />
+      <span className="mx-3 border-right pr-3 text-light">Hello, {this.props.credentials? this.props.credentials.hoTen:'' }</span>
+    <button  className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{backgroundColor:'transparent'}} >  <i className="fa fa-user" /></button>
+ 
+
+  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <Link to="./admin" className="dropdown-item" href="#">Admin</Link>
+    <a className="dropdown-item"  >Booking History</a>
+    <a className="dropdown-item text-danger"  onClick={this.logoutWeb} >LogOut<i className="fa fa-sign-out-alt  ml-1" />
+</a>
+
+    
+  </div>
+
+
 
     </p>
     <nav className="navbar navbar-expand-lg navbar-dark  ">
@@ -26,10 +43,10 @@ class MovieHeader extends Component {
             <Link to="/" className="nav-link" href="#">HOME</Link>
           </li>
           <li className="nav-item">
-            <Link to="/test" className="nav-link" href="#newin">NEWS</Link>
+            <a  className="nav-link" href="#coming">NEWS</a>
           </li>
           <li className="nav-item">
-            <Link to="/whaton" className="nav-link" href="#coming">WHAT'S ON</Link>
+            <a  className="nav-link" href="#newin">WHAT'S ON</a>
           </li>
           <li className="nav-item">
             <Link to="/login" className="nav-link" href="#login">LOGIN</Link>
@@ -52,5 +69,11 @@ class MovieHeader extends Component {
         );
     }
 }
+const mapStateToProps=state=>{
+  return {
+    credentials:state.UserReducer.credentials
+  }
+}
 
-export default MovieHeader;
+
+export default connect(mapStateToProps)(MovieHeader) ;
