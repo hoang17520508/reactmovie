@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Admin from '../Admin/Admin';
+import MovieTest from './Data/MovieTest';
 import MovieCarousel from './MovieCarousel';
 import MovieComingSoon from './MovieComingSoon';
 import MovieContact from './MovieContact';
@@ -13,13 +15,14 @@ export default class MovieHome extends Component {
         return (
             <div>
                 <MovieCarousel />
-                <MovieNewIn />
-                 
                 <MovieShowTime />
+                <MovieNewIn/>
+                 
+                
                 <MovieComingSoon />
                 <MovieContact />
                 <MovieFooter />
-
+               
             </div>
         )
     }

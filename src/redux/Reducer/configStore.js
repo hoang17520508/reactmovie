@@ -1,7 +1,9 @@
 /// file quản lý tất cả các state của uqwnsg dụng thay vì đặt tại component ta đặt state tại store
 import {combineReducers, createStore} from 'redux';
 import {BookingTicketReducer} from './BookingTicketReducer';
+import { QuanLyPhimreducer } from './QuanLyPhimreducer';
 
+import UserReducer from './UserReducer'
 
 
 
@@ -9,7 +11,9 @@ import {BookingTicketReducer} from './BookingTicketReducer';
 const rootReducer=combineReducers({
     // các sate sau này khai báo tại dâdy
    
-   stateBookingTicket:BookingTicketReducer,
+//    stateBookingTicket:BookingTicketReducer,
+   UserReducer,
+   QuanLyPhimreducer:QuanLyPhimreducer
    
 
    

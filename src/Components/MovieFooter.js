@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import MovieBookingHistory from './MovieBookingHistory'
 
 export default class MovieFooter extends Component {
     render() {
@@ -29,16 +30,16 @@ export default class MovieFooter extends Component {
         </div>
         <div className=" col-3  ">
           <p>CONNECT WITH US</p>
-          <a href="#"><span><i className="fab fa-facebook" /> Facebook</span></a> <br />
+          <a href="https://www.facebook.com/profile.php?id=100005380215006"><span><i className="fab fa-facebook" /> Facebook</span></a> <br />
           <a href="#"><span><i className="fab fa-twitter" />Twitter</span></a> <br />
           <a href="#"><span><i className="fab fa-google-plus" />Google +</span></a> <br />  
         </div>
       </div>
       <hr />
-      <h6>2017 © Movie Star / Web design by Movie Star</h6>
+      <h6>2020 © Movie App / Web App UIT</h6>
     </div>
   </div></footer>
-
+<MovieBookingHistory/>
             </div>
         )
     }

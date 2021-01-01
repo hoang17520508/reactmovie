@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { connect, useSelector,useDispatch } from 'react-redux'
 
-export default class MovieComingSoon extends Component {
-    render() {
+export default function MovieComingSoon(props)  {
+  
+  const linkTrailer=useSelector(state=>state.QuanLyPhimreducer.linkTrailer);
         return (
             <div>
           <section className="comingSoon text-left" id="coming">
@@ -33,7 +35,12 @@ export default class MovieComingSoon extends Component {
             <img src="./img/slide-3-video.png" alt />
           
        
-            <a className="video" href="https://vimeo.com/201050698" title="Test title"><i className="fa fa-play" /></a>
+            <a className="video" href="https://www.youtube.com/embed/TP6MkGUZMQI" data-target="#movieTrailer" data-toggle="modal" title="Test title"><i className="fa fa-play" /></a>
+           
+
+
+
+
           </div>
         </div>
       </div>
@@ -115,9 +122,21 @@ export default class MovieComingSoon extends Component {
       </div>
     </div>
   </div>
+  <div className="modal fade" id="movieTrailer" tabIndex={-1} role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div className="modal-dialog modal-lg" role="document">
+    {/*Content*/}
+    <div className="modal-content">
+      {/*Body*/}
+      <div className="modal-body mb-0 p-0">
+        <div className="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <iframe className="embed-responsive-item" src={linkTrailer} allowFullScreen />
+        </div>
+      </div>
+    </div></div></div>
+
 </section>
 
             </div>
         )
     }
-}
+

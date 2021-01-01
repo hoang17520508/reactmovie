@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import style from './BaiTapRenderDanhSachPhim.module.css';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 export default class MovieTest extends Component {
     films= [
         {
@@ -180,20 +182,43 @@ export default class MovieTest extends Component {
           "danhGia": 5
         }
       ]
+      
       BaiTapRenderDanhSachPhim=()=>{
         
         return this.films.map((film,index)=>{
-            return <div className="col-4" key={index}>
-            <div className="card h-100">
-               
-                <img className={`card-img-top ${style.hinhAnhPhim}`}  src={film.hinhAnh} alt="123" />
-                <div className="card-body">
-        <h6 className="card-title text-center " style={{height:'60px'}}>{film.tenPhim.length >50 ?<span>{film.tenPhim.substr(0,50)} ...</span>:<span>{film.tenPhim}</span>} </h6>
-                    <p className="card-text text-center">{film.moTa.length >150 ?<span>{film.moTa.substr(0,150)} ...</span>:<span>{film.moTa}</span>}</p>
-                </div>
-            </div>
-        </div>;
-    });
+          return <div className="col" key={index}>
+          <div className="card h-100">
+             
+              <img className={`card-img-top ${style.hinhAnhPhim}`}  src={film.hinhAnh} alt="123" />
+              <div className="card-body">
+      <h6 className="card-title text-center " style={{height:'60px'}}>{film.tenPhim.length >50 ?<span>{film.tenPhim.substr(0,50)} ...</span>:<span>{film.tenPhim}</span>} </h6>
+                  <p className="card-text text-center">{film.moTa.length >150 ?<span>{film.moTa.substr(0,150)} ...</span>:<span>{film.moTa}</span>}</p>
+              </div>
+          </div>
+      </div>;
+    //   return   <div className=" col   ">
+    //   <div className="newIn__ item">
+    //      <div className="newIn__info">
+    //        <img className="img-fluid" src={film.hinhAnh} alt />
+    //        <div className="newIn__overlay" />
+    //        <div className="newIn__detail">
+    //          <i className="fa fa-play" />
+    //          <a href="#">Read More</a>
+    //          <p>{`Release:${film.ngayKhoiChieu}`}</p>
+    //          <button className="newIn__BookTicket__btn">Đặt vé</button>
+    //        </div>
+    //      </div>
+    //      <p className="newIn__item__title">{film.tenPhim}</p>
+    //      <p className="newIn__item__rating">
+    //        <i className="fa fa-star" />
+    //        <i className="fa fa-star" />
+    //        <i className="fa fa-star" />
+    //        <i className="fa fa-star" />
+    //        <i className="fa fa-star" />
+    //      </p>
+    //    </div>
+    //  </div>
+  });
 
         
     }
@@ -201,10 +226,48 @@ export default class MovieTest extends Component {
       
 
     render() {
+      var settings = {
+        dots: false,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
+      };
+      function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "#808080",borderRadius:"50%",fontSize:"100px",width:"50px",height:"50px",right: "-50px" }}
+            onClick={onClick}
+          />
+        );
+      }
+      
+      function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "#808080",borderRadius:"50%",fontSize:"100px",width:"50px",height:"50px",left: "-50px" }}
+            onClick={onClick}
+          />
+        );
+      }
         return (
             <div className="container">
-                <div className="row">
-                    {this.BaiTapRenderDanhSachPhim()}
+                <div className="slider_film">
+                  <Slider {...settings}>
+                  {this.BaiTapRenderDanhSachPhim()}
+                  </Slider>
+                
+                 
+
+                 
+                   
                 </div>
                 
             </div>
