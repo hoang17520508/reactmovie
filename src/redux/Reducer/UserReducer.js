@@ -3,7 +3,25 @@ import { FETCH_CREDENTIALS } from "../types/UserType";
 const initaialState={
     credentials:null,
     danhSachNguoiDung:[],
-    ticketInfo:[]
+    ticketInfo:[],
+    dataRedux:{  taiKhoan:'',
+    matKhau:'',
+    email:'',
+    soDt:'',
+    maNhom:'GP01',
+    maLoaiNguoiDung:'KhachHang',
+    hoTen:''
+    },
+    dataSua:{
+        taiKhoan:'',
+        matKhau:'',
+        email:'',
+        soDt:'',
+        maNhom:'GP01',
+        maLoaiNguoiDung:'',
+        hoTen:''
+    }
+   
 };
 const UserReducer=(state=initaialState,action)=>{
     switch(action.type){
@@ -26,8 +44,21 @@ const UserReducer=(state=initaialState,action)=>{
         case 'DELETE_USER':{
             return {...state}
         }
+        case 'SET_DATA_SUA':{
+            state.dataSua={...action.data}
+            let newdataRedux={...action.dataRedux};
+             newdataRedux={...state.dataSua};
+            return {...state,dataRedux:newdataRedux}
+        }
+        case 'SET_DATA':{
+            return {...state,dataRedux:action.data}
+        }
+        case 'ADD_SUCCESS':{
+            return {...state}
+
+        }
         default:
-            return state;
+            return state ;
     }
 }
 export default UserReducer;

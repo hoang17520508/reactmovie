@@ -17,6 +17,7 @@ import { login } from '../redux/actions/UserAction'
               matKhau:'',
 
             }} onSubmit={(values)=>{
+              console.log("loginvalue",values)
               this.props.dispatch(login(values));
               this.props.history.push('/');
             }}

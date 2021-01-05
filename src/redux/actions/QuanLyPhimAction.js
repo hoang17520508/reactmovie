@@ -68,3 +68,53 @@ export const datVeApiAction= (thongTinVe)=>{
     
     }
 }
+export const layThongTinHeThongRapAction= async()=>{
+    return async(dispatch)=>{
+    try{
+        const {data,status}=await Axios({
+            url:'https://movie0706.cybersoft.edu.vn/api/QuanLyRap/LayThongTinHeThongRap',
+            method:'GET'
+        })
+        
+        if(status===200){
+            dispatch({
+                type:'THONG_TIN_HE_THONG_RAP',
+                heThongRap:data
+            
+            })
+            console.log("hethonrap",data);
+        }
+    }
+    catch(err)
+    {
+        
+        console.log(err);   
+    }
+    
+    }
+}
+export const layThongTinCumRapAction= async()=>{
+    return async(dispatch)=>{
+    try{
+        const {data,status}=await Axios({
+            url:'https://movie0706.cybersoft.edu.vn/api/QuanLyRap/LayThongTinCumRapTheoHeThong?maHeThongRap=BHDStar',
+            method:'GET'
+        })
+        
+        if(status===200){
+            dispatch({
+                type:'THONG_TIN_CUM_RAP',
+                cumRap:data
+            
+            })
+            console.log("hethongcumrap",data);
+        }
+    }
+    catch(err)
+    {
+        
+        console.log(err);   
+    }
+    
+    }
+}

@@ -90,3 +90,47 @@ export const DeleteUserAction=(user)=>{
         }
     }
 }
+export const AddUserAction=(user)=>{
+ return (dispatch)=>{
+     try{
+        Axios({
+            method:"POST",
+            url:'https://movie0706.cybersoft.edu.vn/api/QuanLyNguoiDung/ThemNguoiDung',
+            data:user,
+            headers:{'Authorization': 'Bearer '+localStorage.getItem(ACCESS_TOKEN)},
+        })
+        dispatch(
+            {type:'ADD_SUCCESS',
+            }
+        )
+
+     }
+     catch(err){
+         console.log(err);
+     }
+  
+     
+ }
+}
+export const UpdateUserAction=(user)=>{
+    return (dispatch)=>{
+        try{
+           Axios({
+               method:"PUT",
+               url:'https://movie0706.cybersoft.edu.vn/api/QuanLyNguoiDung/CapNhatThongTinNguoiDung',
+               data:user,
+               headers:{'Authorization': 'Bearer '+localStorage.getItem(ACCESS_TOKEN)},
+           })
+           dispatch(
+               {type:'ADD_SUCCESS',
+               }
+           )
+   
+        }
+        catch(err){
+            console.log(err);
+        }
+     
+        
+    }
+   }

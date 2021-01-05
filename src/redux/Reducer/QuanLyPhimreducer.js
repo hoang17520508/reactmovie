@@ -7,7 +7,11 @@ const stateDefault = {
      
     ],
     linkTrailer:'',
-    day:''
+    day:'',
+    heThongRap:{},
+    cumRap:{},
+    rap:''
+
 
 }
 export const QuanLyPhimreducer = (state = stateDefault, action) => {
@@ -44,6 +48,12 @@ export const QuanLyPhimreducer = (state = stateDefault, action) => {
         }
         case 'CHOOSE_DAY':{
             return {...state,day:action.data}
+        }
+        case 'THONG_TIN_HE_THONG_RAP':{
+            return {...state,heThongRap:action.heThongRap}
+        }
+        case 'THONG_TIN_CUM_RAP':{
+            return {...state,heThongRap:action.cumRap}
         }
     }
     return { ...state }
