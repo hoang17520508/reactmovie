@@ -39,7 +39,7 @@ export default class MovieFooter extends Component {
       <h6>2020 © Movie App / Web App UIT</h6>
     </div>
   </div></footer>
-<MovieBookingHistory/>
+
             </div>
         )
     }

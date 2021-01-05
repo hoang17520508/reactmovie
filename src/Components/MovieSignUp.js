@@ -6,12 +6,12 @@ import { singupUserSchema } from '../Services/User'
 
 export default class MovieSignUp extends Component {
   _handleSubmit=(values)=>{
-    userService.signUp(values).then(res=>{console.log(res)}).catch(err=>{console.log()})
+    userService.signUp(values).then(res=>{console.log(res);this.props.history.push('/');}).catch(err=>{console.log()})
   }
     render() {
         return (
             <div className="" id="signup">
- <Formik className="" initialValues={{
+ <Formik  className="bg_signup" initialValues={{
      taiKhoan:'',
      matKhau:'',
      hoTen:'',
@@ -22,8 +22,8 @@ export default class MovieSignUp extends Component {
    validationSchema={singupUserSchema}
    onSubmit={this._handleSubmit}
    render={(formikProps)=>(
-   <form className="text-center border border-light p-5 form-group container" onSubmit={formikProps.handleSubmit}  >
-   <p className="h4 mb-4 text-light">Sign up</p>
+   <form className="text-center border border-light p-5 form-group container bg-light" onSubmit={formikProps.handleSubmit}  >
+   <p className="h4 mb-4 text-dark">Sign up</p>
    
    {/* E-mail */}
    <Field type="text"  className="form-control " placeholder="Account" name="taiKhoan" onChange={formikProps.handleChange} />

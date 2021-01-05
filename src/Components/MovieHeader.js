@@ -20,8 +20,8 @@ class MovieHeader extends Component {
  
 
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <Link to="./admin" className="dropdown-item" href="#">Admin</Link>
-    <a className="dropdown-item"  >Booking History</a>
+   
+    <Link to="/thongtindatve" className="dropdown-item"  >Booking History</Link>
     <a className="dropdown-item text-danger"  onClick={this.logoutWeb} >LogOut<i className="fa fa-sign-out-alt  ml-1" />
 </a>
 

@@ -78,7 +78,7 @@ console.log('mangphim',mangPhim);
 
   var settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -91,7 +91,7 @@ console.log('mangphim',mangPhim);
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "#8888",borderRadius:"50%",fontSize:"100px",width:"50px",height:"50px",right: "-50px",top:'350px'  }}
+        style={{ ...style, display: "block", background: "#8888",borderRadius:"50%",fontSize:"85px",width:"50px",height:"50px",right: "-50px",top:'350px',  }}
         onClick={onClick}
       />
     );
@@ -102,7 +102,7 @@ console.log('mangphim',mangPhim);
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "#8888",borderRadius:"50%",fontSize:"100px",width:"50px",height:"50px",left: "-50px",top:'350px' }}
+        style={{ ...style, display: "block", background: "#8888",borderRadius:"50%",fontSize:"85px",width:"50px",height:"50px",left: "-50px",top:'350px', }}
         onClick={onClick}
       />
     );

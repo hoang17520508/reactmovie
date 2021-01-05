@@ -501,10 +501,14 @@ width: 100%;
 }
 #signup {
   background-image: url('./assets/background.jpg');
+  
   padding: 0;
   margin: 0;
   height: 800px;
   
+}
+#singup .border-light{
+  border: none;
 }
 /* #singup  .border-light {
   border-color: transparent !important;
@@ -518,4 +522,10 @@ width: 100%;
   background-color: rgb(80, 77, 77);
   color: #fff;
   cursor: pointer;
+}
+.bg_history{
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }

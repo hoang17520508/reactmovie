@@ -10,41 +10,33 @@ export default function MovieShowTime() {
         <div className="col-4">
 
           <select name="cars" id="cars" style={{ border: '2px solid white', boxShadow: '0 0 10px rgba(0,0,0,.3)', borderRadius: '5px', padding: '10px',width:'100%' }}>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+            <option value="volvo">Choose Film</option>
+           
           </select>
 
 
         </div>
         <div className="col-2">
           <select name="cars" id="cars" style={{ border: '2px solid white', boxShadow: '0 0 10px rgba(0,0,0,.3)', borderRadius: '5px', padding: '10px',width:'100%' }}>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+            <option value="volvo">Choose Cinema</option>
+            
           </select>
 
         </div>
         <div className="col-2" >
           <select name="cars" id="cars" style={{ border: '2px solid white', boxShadow: '0 0 10px rgba(0,0,0,.3)', borderRadius: '5px', padding: '10px',width:'100%' }}>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+            <option value="volvo">Choose day</option>
+            
           </select>
 
         </div>
         <div className="col-2">
           <select name="cars" id="cars" style={{ border: '2px solid white', boxShadow: '0 0 10px rgba(0,0,0,.3)', borderRadius: '5px', padding: '10px',width:'100%' }}>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+            <option value="volvo">Choose Time</option>
+            
           </select>
         </div>
-          <div className="col-2"><button className="btn btn-warning">Booking Ticket</button></div>
+          <div className="col-2"><button className="btn btn-warning" onClick={()=>{alert("Comming Soon")}}>Booking Ticket</button></div>
         
 
 

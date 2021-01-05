@@ -26,7 +26,7 @@ import { login } from '../redux/actions/UserAction'
                   <div className="input-group-prepend">
                     <span className="input-group-text"> <i className="fa fa-user" /> </span>
                   </div>
-                  <input name className="form-control" placeholder="Email or login"  name="taiKhoan" onChange={formikProps.handleChange} />
+                  <input name className="form-control" placeholder="Email or Username"  name="taiKhoan" onChange={formikProps.handleChange} />
                 </div> {/* input-group.// */}
               </div> {/* form-group// */}
               <div className="form-group">
@@ -34,7 +34,7 @@ import { login } from '../redux/actions/UserAction'
                   <div className="input-group-prepend">
                     <span className="input-group-text"> <i className="fa fa-lock" /> </span>
                   </div>
-                  <input className="form-control" placeholder="******" type="password" name="matKhau" onChange={formikProps.handleChange} />
+                  <input className="form-control" placeholder="Password" type="password" name="matKhau" onChange={formikProps.handleChange} />
                 </div> {/* input-group.// */}
               </div> {/* form-group// */}
               <div className="form-group">

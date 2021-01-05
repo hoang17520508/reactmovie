@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Admin from '../Admin/Admin';
+
 import MovieTest from './Data/MovieTest';
 import MovieCarousel from './MovieCarousel';
 import MovieComingSoon from './MovieComingSoon';
