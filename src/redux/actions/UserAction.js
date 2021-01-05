@@ -1,4 +1,5 @@
 import Axios from 'axios';
+import Swal from 'sweetalert2';
 import { createAction } from '.';
 import { userService } from '../../Services/'
 import UserService from '../../Services/User';
@@ -70,18 +71,22 @@ export const getTicketInfo=(user)=>{
 export const DeleteUserAction=(user)=>{
     return async (dispatch)=>{
         try{
-            console.log("token",localStorage.getItem(ACCESS_TOKEN));
+            console.log("token", 'Bearer '+localStorage.getItem(ACCESS_TOKEN));
           await  Axios({
                 method:'DELETE',
                 url:`https://movie0706.cybersoft.edu.vn/api/QuanLyNguoiDung/XoaNguoiDung?TaiKhoan=${user}`,
                 headers:{'Authorization': 'Bearer '+localStorage.getItem(ACCESS_TOKEN)},
             })
+            dispatch (await getUserListAction())
             dispatch({
                 type:'DELETE_USER'
             })
+            
+            Swal.fire('Thông báo ','Xóa thành công','success');
         }
         catch(err){
             console.log(err);
+            Swal.fire('Thông báo ','Xóa thất bại,người dùng đã đặt vé không thể xóa','error');
         }
     }
 }

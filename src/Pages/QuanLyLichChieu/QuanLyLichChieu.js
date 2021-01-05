@@ -36,37 +36,59 @@ export default function QuanLyLichChieu(props) {
                 
                 <form  className="text-left" >
                     
-
-                    <div className="row">
-                    <div className="form-group col-4">
-                        <label>Mã phim</label>
-                        <input name="maPhim" className="form-control"  />
+                <div className="form-group ">
+                        <label>Tên Phim</label>
+                        <input name="maPhim" readOnly className="form-control"  />
                     </div>
+                    <div className="row">
+                    
                     <div className="form-grou col-4">
-                        <label>Tên phim</label>
+                        <label>Chọn Hệ Thống Rạp</label>
+                        <select className="form-control">
+<option>Danh sách 01</option>
+<option>Danh sách 02</option>
+<option>Danh sách 03</option>
+<option>Danh sách 04</option>
+</select>
+                    </div>
+                    <div className="form-group col-4">
+                        <label>Chọn cụm rạp</label>
+                        <select className="form-control">
+<option>Danh sách 01</option>
+<option>Danh sách 02</option>
+<option>Danh sách 03</option>
+<option>Danh sách 04</option>
+</select>
+               
+                    </div>
+                    <div className="form-group col-4">
+                        <label>Chọn  rạp</label>
+                        <select className="form-control">
+<option>Danh sách 01</option>
+<option>Danh sách 02</option>
+<option>Danh sách 03</option>
+<option>Danh sách 04</option>
+</select>
+               
+                    </div>
+                    </div>
+                    <div className="row">
+                    
+                    <div className="form-grou col-4">
+                        <label>Chọn ngày giờ chiếu</label>
                         <input name="tenPhim" className="form-control"  />
                     </div>
                     <div className="form-group col-4">
-                        <label>Trailer</label>
+                        <label>Thời lượng phim</label>
+                        <input name="trailer" className="form-control"  />
+                    </div>
+                    <div className="form-group col-4">
+                        <label>Giá vé</label>
                         <input name="trailer" className="form-control"  />
                     </div>
                     </div>
-                    <div className="form-group">
-                        <label>Hình ảnh</label>
-                        <input type="file" name="hinhAnh" className="form-control"  />
-                    </div>
-                    <div className="form-group">
-                        <label>Mô tả</label>
-                        <input name="moTa" className="form-control"  />
-                    </div>
-                    <div className="form-group">
-                        <label>Ngày chiếu</label>
-                        <input name="ngayChieu" type="date"  className="form-control" />
-                    </div>
-                    <div className="form-group">
-                        <label>Mã nhóm</label>
-                        <input name="maNhom" value="GP01" className="form-control" />
-                    </div>
+                    
+                   
                     <button type="submit" className="form-control btn btn-success">Submit</button>
 
                 </form>

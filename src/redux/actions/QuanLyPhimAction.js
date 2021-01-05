@@ -63,7 +63,7 @@ export const datVeApiAction= (thongTinVe)=>{
     {
         
         console.log(err.response.data);   
-        Swal.fire('Thông báo ','Đặt vé thất bại','error');
+        Swal.fire('Thông báo ','Đặt vé thất bại,','error');
     }
     
     }
