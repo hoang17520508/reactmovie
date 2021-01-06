@@ -72,7 +72,7 @@ export default function ChiTietPhim(props) {
                                     if (index == 0) {
                                         activeClass = "active"
                                     }
-                                    return <a className={`nav-link ${activeClass} text-center`} id={`v-pills-${heThongRap.maHeThongRap}`} data-toggle="pill" href={`#${heThongRap.maHeThongRap}`} style={{ width: '100%' }} role="tab" aria-controls="v-pills-home" aria-selected="true" key={index} > <img src={heThongRap.logo} style={{ width: '75px', height: "75px" }} /> </a>
+                                    return <a className={`nav-link  text-center`} id={`v-pills-${heThongRap.maHeThongRap}`} data-toggle="pill" href={`#${heThongRap.maHeThongRap}`} style={{ width: '100%' }} role="tab" aria-controls="v-pills-home" aria-selected="true" key={index} > <img src={heThongRap.logo} style={{ width: '75px', height: "75px" }} /> </a>
                                 })}
 
                             </div>

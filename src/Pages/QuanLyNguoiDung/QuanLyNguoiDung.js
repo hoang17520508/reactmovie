@@ -26,6 +26,7 @@ export default function QuanLyNguoiDung() {
         //Xử lý cập nhật values
         const newValues = {...dataRedux};
         newValues[name] = value; //Gán giá trị mới cho thuộc tính đang nhập
+        console.log("newvalue",newValues);
         dispatch({
             type: 'SET_DATA',
             data: Object.assign(newValues,{maNhom:"GP01"}),

@@ -8,9 +8,11 @@ const stateDefault = {
     ],
     linkTrailer:'',
     day:'',
-    heThongRap:{},
-    cumRap:{},
-    rap:''
+    heThongRap:[],
+    cumRap:[],
+    rap:'',
+    maHeThongRap:'',
+    thongTinTaoLichChieu:{ maPhim: '',  maRap: '',ngayChieuGioChieu:'',giaVe:'' }
 
 
 }
@@ -53,7 +55,18 @@ export const QuanLyPhimreducer = (state = stateDefault, action) => {
             return {...state,heThongRap:action.heThongRap}
         }
         case 'THONG_TIN_CUM_RAP':{
-            return {...state,heThongRap:action.cumRap}
+            return {...state,cumRap:action.cumRap}
+        }
+        case 'SET_MA_HE_THONG_RAP':{
+            
+            return {...state,maHeThongRap:action.data}
+        }
+        case 'SET_THONG_TIN_TAO_LICH_CHIEU':{
+            
+            return {...state,thongTinTaoLichChieu:action.data}
+        }
+        case 'THEM_LICH_CHIEU_THANH_CONG':{
+            return {...state}
         }
     }
     return { ...state }

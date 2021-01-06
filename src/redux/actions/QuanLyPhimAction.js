@@ -68,7 +68,7 @@ export const datVeApiAction= (thongTinVe)=>{
     
     }
 }
-export const layThongTinHeThongRapAction= async()=>{
+export const layThongTinHeThongRapAction= ()=>{
     return async(dispatch)=>{
     try{
         const {data,status}=await Axios({
@@ -93,11 +93,11 @@ export const layThongTinHeThongRapAction= async()=>{
     
     }
 }
-export const layThongTinCumRapAction= async()=>{
+export const layThongTinCumRapAction= (maHeThongRap)=>{
     return async(dispatch)=>{
     try{
         const {data,status}=await Axios({
-            url:'https://movie0706.cybersoft.edu.vn/api/QuanLyRap/LayThongTinCumRapTheoHeThong?maHeThongRap=BHDStar',
+            url:`https://movie0706.cybersoft.edu.vn/api/QuanLyRap/LayThongTinCumRapTheoHeThong?maHeThongRap=${maHeThongRap}`,
             method:'GET'
         })
         
@@ -114,6 +114,69 @@ export const layThongTinCumRapAction= async()=>{
     {
         
         console.log(err);   
+    }
+    
+    }
+}
+export const themLichChieuAction= (datathem)=>{
+    
+    return async(dispatch)=>{
+    try{
+        const {data,status}=await Axios({
+            url:'https://movie0706.cybersoft.edu.vn/api/QuanLyDatVe/TaoLichChieu',
+            method:'POST',
+            data:datathem,
+            headers:{'Authorization': 'Bearer '+localStorage.getItem(ACCESS_TOKEN)}
+        })
+        console.log(data);
+       
+        
+        if(status===200){
+            dispatch({
+                type:'THEM_LICH_CHIEU_THANH_CONG',
+               
+            
+            })
+            
+        }
+        Swal.fire('Thông báo ','Thêm thành công','success');
+    }
+    catch(err)
+    {
+        
+        console.log(err);  
+        Swal.fire('Thông báo ','Thêm  lịch chiếu thất bại','error'); 
+        
+    }
+    
+    }
+}
+export const xoaFilmAction= (maPhim)=>{
+    
+    return async(dispatch)=>{
+    try{
+        const {data,status}=await Axios({
+            url:`https://movie0706.cybersoft.edu.vn/api/QuanLyPhim/XoaPhim?MaPhim=${maPhim}
+            `,
+            method:'DELETE',
+            
+            headers:{'Authorization': 'Bearer '+localStorage.getItem(ACCESS_TOKEN)}
+        })
+        console.log(data);
+       
+        
+        if(status===200){
+            
+            
+        }
+        Swal.fire('Thông báo ','Xóa thành công','success');
+    }
+    catch(err)
+    {
+        
+        console.log(err);  
+        Swal.fire('Thông báo ','Xóa Thành công','error'); 
+        
     }
     
     }

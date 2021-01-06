@@ -90,10 +90,7 @@ export default class QuanLyPhim extends Component {
                         <label>Mã nhóm</label>
                         <input name="maNhom" value="GP01" className="form-control" onChange={this.handleChange}/>
                     </div>
-                    <div className="form-group">
-                        <label>Ngày Khởi Chiếu</label>
-                        <input name="ngayKhoiChieu" type="date" className="form-control" onChange={this.handleChange}/>
-                    </div>
+                   
                     <button type="submit" className="form-control">Submit</button>
 
                 </form>
