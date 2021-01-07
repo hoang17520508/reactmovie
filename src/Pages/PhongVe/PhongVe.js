@@ -76,7 +76,7 @@ export default function PhongVe(props) {
     }
     else{
         Swal.fire('Thông báo ','Đăng nhập để tiếp tục','warning');
-        props.history.replace('/login');
+        props.history.push('/login');
         
         window.location.reload();// xoa danh sach ghe dang dat di
     }

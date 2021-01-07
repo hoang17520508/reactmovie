@@ -22,7 +22,7 @@ export const login=(user)=>{
     
     history.goBack();
      Swal.fire('Thông báo ','Đăng nhập thành công','success');
-         
+        
     
      }).catch(err=>{console.log(err);
         Swal.fire('Thông báo ','Tài khoản mật khẩu không đúng','error');

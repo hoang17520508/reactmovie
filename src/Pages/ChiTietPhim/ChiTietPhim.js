@@ -127,11 +127,15 @@ export default function ChiTietPhim(props) {
                                                                  if(isday===day)
                                                                 {
                                                                     
-                                                                    return <NavLink to={'/chitietphongve/' + lichChieu.maLichChieu} className="col-3" key={index}>
-                                                                    {moment(lichChieu.ngayChieuGioChieu).format('hh:mm A')}
-
-                                                                </NavLink>
-                                                                }
+                                                                        return <NavLink to={'/chitietphongve/' + lichChieu.maLichChieu} className="col-3" key={index}>
+                                                                        {moment(lichChieu.ngayChieuGioChieu).format('hh:mm A')}
+                                                                         
+                                                                    </NavLink>
+                                                                    }
+                                                                    
+                                                                   
+                                                                
+                                                                
                                                                 
                                                              })}
                                                          </div>
