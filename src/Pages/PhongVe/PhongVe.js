@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import Swal from 'sweetalert2';
 import { datVeApiAction, layThongTinPhongveAction } from '../../redux/actions/QuanLyPhimAction';
 import { USER_LOGIN } from '../../util/setting';
 import './phongve.css'
@@ -72,7 +73,7 @@ export default function PhongVe(props) {
         dispatch( datVeApiAction(objectDatVe));
     }
     else{
-        props.history.push('./login');
+        Swal.fire('Thông báo ','Đăng nhập để tiếp tục','warning');
     }
 }} className="btn btn-success w-100 p-4" style={{fontSize:'25px'}}>Đặt Vé</button>
 

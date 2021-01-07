@@ -5,6 +5,8 @@ import { userService } from '../../Services/'
 import UserService from '../../Services/User';
 import { ACCESS_TOKEN, USER_LOGIN } from '../../util/setting';
 import { FETCH_CREDENTIALS } from '../types/UserType';
+import {history} from '../../App'
+// import {history} from history;
 
 export const login=(user)=>{
     return (dispatch)=>{
@@ -16,9 +18,13 @@ export const login=(user)=>{
         localStorage.setItem('credentials',JSON.stringify(res.data));
         localStorage.setItem('ACCESS_TOKEN',res.data.accessToken);
         localStorage.setItem('USER_LOGIN',JSON.stringify(res.data));
-    //  history.push('/trangchu');
+     history.push('/');
+     Swal.fire('Thông báo ','Đăng nhập thành công','success');
+         
     
-     }).catch(err=>{console.log(err)})
+     }).catch(err=>{console.log(err);
+        Swal.fire('Thông báo ','Tài khoản mật khẩu không đúng','error');
+    })
 
     };
 }

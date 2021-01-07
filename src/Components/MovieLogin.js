@@ -19,7 +19,7 @@ import { login } from '../redux/actions/UserAction'
             }} onSubmit={(values)=>{
               console.log("loginvalue",values)
               this.props.dispatch(login(values));
-              this.props.history.push('/');
+             
             }}
              render={(formikProps)=>( <Form onSubmit={formikProps.handleSubmit}>
               <div className="form-group">

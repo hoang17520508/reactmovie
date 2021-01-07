@@ -3,6 +3,7 @@ import Axios from 'axios'
 import { ACCESS_TOKEN, DOMAIN } from "../../util/setting"
 import Swal from 'sweetalert2'
 import { GET_DATA_PHIM } from '../types/QuanLyPhimConst'
+import {history} from '../../App'
 
 export const getDataFilmAction =()=>{
     
@@ -64,6 +65,7 @@ export const datVeApiAction= (thongTinVe)=>{
         
         console.log(err.response.data);   
         Swal.fire('Thông báo ','Đặt vé thất bại,','error');
+        
     }
     
     }
