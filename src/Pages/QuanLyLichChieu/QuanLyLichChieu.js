@@ -25,7 +25,7 @@ export default function QuanLyLichChieu(props) {
         // console.log("value",value);
 
         // Xử lý cập nhật values
-        const newValues = { ...thongTinTaoLichChieu };
+            const newValues = { ...thongTinTaoLichChieu };
          
         
             newValues[name] = value;

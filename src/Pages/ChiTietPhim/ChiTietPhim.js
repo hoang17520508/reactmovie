@@ -53,6 +53,11 @@ export default function ChiTietPhim(props) {
                             <tr>
                                 <td>Description:</td>
                                 <td>{chiTietPhim.moTa}</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Showtimes:</td>
+                                <td>{moment( chiTietPhim.ngayKhoiChieu).format("MMM Do YY")}</td>
                             </tr>
 
                         </table>

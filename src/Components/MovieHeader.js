@@ -49,10 +49,10 @@ class MovieHeader extends Component {
             <a  className="nav-link" href="#newin">WHAT'S ON</a>
           </li>
           <li className="nav-item">
-            <Link to="/login" className="nav-link" href="#login">LOGIN</Link>
+            <Link to="/login" disabled={this.props.credentials? 'disable':''} className="nav-link" href="#login">LOGIN</Link>
           </li>
           <li className="nav-item">
-            <Link to="/signup" className="nav-link" href="#signup">SIGNUP</Link>
+            <Link to="/signup" disabled={this.props.credentials? 'disable':''} className="nav-link" href="#signup">SIGNUP</Link>
           </li>
         </ul>
       </div>

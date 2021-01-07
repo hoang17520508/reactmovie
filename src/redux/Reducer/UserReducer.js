@@ -31,6 +31,8 @@ const UserReducer=(state=initaialState,action)=>{
         }
         case 'LOG_OUT':{
             localStorage.removeItem('credentials');
+            localStorage.removeItem('USER_LOGIN');
+            localStorage.removeItem('ACCESS_TOKEN');
             state.credentials="";
             return {...state};
         }

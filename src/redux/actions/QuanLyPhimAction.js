@@ -57,7 +57,7 @@ export const datVeApiAction= (thongTinVe)=>{
         dispatch( await layThongTinPhongveAction(thongTinVe.maLichChieu));
         dispatch({type:'DAT_VE_THANH_CONG'});
         Swal.fire('Thông báo ','Đặt vé thành công','success');
-       console.log(data);
+       
     }
     catch(err)
     {
