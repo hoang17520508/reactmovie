@@ -15,7 +15,7 @@ class MovieHeader extends Component {
   <div className="container ">
     <p className=" text-white text-right mb-0">
       
-      <span className="mx-3 border-right pr-3 text-light">Hello, {this.props.credentials? this.props.credentials.hoTen:'' }</span>
+    <span className="mx-3 border-right pr-3 text-light">Hello, {this.props.credentials? this.props.credentials.hoTen:'' }</span>
     <button  className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{backgroundColor:'transparent'}} >  <i className="fa fa-user" /></button>
  
 
