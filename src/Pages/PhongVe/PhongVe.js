@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import Swal from 'sweetalert2';
 import { datVeApiAction, layThongTinPhongveAction } from '../../redux/actions/QuanLyPhimAction';
 import { USER_LOGIN } from '../../util/setting';
-import './phongve.css'
+import './phongve.css';
+import {history} from '../../App'
+
 export default function PhongVe(props) {
     // const thongTinPhongVe=useSelector(state=>state.QuanLyPhimreducer.thongtinPhongVe);
     const thongTinPhongVe=useSelector(state=>state.QuanLyPhimreducer.thongTinPhongVe);
@@ -75,6 +77,7 @@ export default function PhongVe(props) {
     else{
         Swal.fire('Thông báo ','Đăng nhập để tiếp tục','warning');
         props.history.replace('/login');
+        
         window.location.reload();// xoa danh sach ghe dang dat di
     }
 }} className="btn btn-success w-100 p-4" style={{fontSize:'25px'}}>Đặt Vé</button>

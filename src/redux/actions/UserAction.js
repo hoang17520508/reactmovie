@@ -18,7 +18,9 @@ export const login=(user)=>{
         localStorage.setItem('credentials',JSON.stringify(res.data));
         localStorage.setItem('ACCESS_TOKEN',res.data.accessToken);
         localStorage.setItem('USER_LOGIN',JSON.stringify(res.data));
-     history.push('/');
+    //  history.push('/');
+    
+    history.goBack();
      Swal.fire('Thông báo ','Đăng nhập thành công','success');
          
     
