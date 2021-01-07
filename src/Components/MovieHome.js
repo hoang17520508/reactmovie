@@ -15,7 +15,7 @@ export default class MovieHome extends Component {
         return (
             <div>
                 <MovieCarousel />
-                <MovieShowTime />
+                {/* <MovieShowTime /> */}
                 <MovieNewIn/>
                  
                 

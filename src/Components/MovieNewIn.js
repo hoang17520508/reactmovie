@@ -51,19 +51,19 @@ console.log('mangphim',mangPhim);
               }}
                 
                data-toggle="modal" className="fa fa-play" />
-              <a href="#">Read More</a>
-              <p>{`Release:${moment(film.ngayKhoiChieu).format("MMM Do YY")  }`}</p>
+              <a href="#"></a>
+              <p style={{fontSize:"15px"}}>{`Release:${moment(film.ngayKhoiChieu).format("MMM Do YY")  }`}</p>
               <NavLink to={`/chitietphim/${film.maPhim}`} className="newIn__BookTicket__btn">BUY</NavLink>
             </div>
           </div>
-          <p className="newIn__item__title" style={{height:'25px',fontSize:'15px'}}>{film.tenPhim}</p>
+          <p className="newIn__item__title" style={{height:'25px',fontSize:'15px',fontWeight:'600'}}>{film.tenPhim}</p>
           <p className="newIn__item__rating">
             {/* <i className="fa fa-star" />
        <i className="fa fa-star" />
        <i className="fa fa-star" />
        <i className="fa fa-star" />
        <i className="fa fa-star" /> */}
-            {pushstararray(film.danhGia)}
+            {/* {pushstararray(film.danhGia)} */}
           </p>
         </div>
      

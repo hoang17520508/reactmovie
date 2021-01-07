@@ -37,8 +37,9 @@ export default function MovieBookingHistory() {
     
 
     return (
-       <div className="bg_history">
-            <div className="container " style={{marginTop:"110px"}}>
+      <div id="root_history">
+           <div className="bg_history">
+            <div className="container " style={{paddingTop:"110px"}}>
 <h3 className="text-warning">Booking History</h3>
 <table className="table bg-dark text-light">
    <thead>
@@ -64,5 +65,6 @@ export default function MovieBookingHistory() {
 
         </div>
        </div>
+      </div>
     )
 }

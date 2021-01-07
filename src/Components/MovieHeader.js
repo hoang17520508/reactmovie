@@ -11,26 +11,29 @@ class MovieHeader extends Component {
     render() {
         return (
             <div>
+              
       <header className=" header">
   <div className="container ">
-    <p className=" text-white text-right mb-0">
+    {this.props.credentials?  <div>  <p className=" text-white text-right mb-0">
       
-    <span className="mx-3 border-right pr-3 text-light">Hello, {this.props.credentials? this.props.credentials.hoTen:'' }</span>
-    <button  className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{backgroundColor:'transparent'}} >  <i className="fa fa-user" /></button>
- 
-
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <span className="mx-3 border-right pr-3 text-light">Hello, {this.props.credentials? this.props.credentials.hoTen:'' }</span>
+      <button  className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{backgroundColor:'transparent'}} >  <i className="fa fa-user" /></button>
    
-    <Link to="/thongtindatve" className="dropdown-item"  >Booking History</Link>
-    <a className="dropdown-item text-danger"  onClick={this.logoutWeb} >LogOut<i className="fa fa-sign-out-alt  ml-1" />
-</a>
-
-    
-  </div>
-
-
-
-    </p>
+  
+    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+     
+      <Link to="/thongtindatve" className="dropdown-item"  >Booking History</Link>
+      <a className="dropdown-item text-danger"  onClick={this.logoutWeb} >LogOut<i className="fa fa-sign-out-alt  ml-1" />
+  </a>
+  
+      
+    </div>
+  
+  
+  
+      </p></div> :<div></div>}
+  
+  
     <nav className="navbar navbar-expand-lg navbar-dark  ">
       <a className="navbar-brand" href="#">
         <img src="./img/logo.svg" alt /></a>

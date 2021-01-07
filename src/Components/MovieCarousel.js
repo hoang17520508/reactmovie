@@ -14,17 +14,17 @@ class MovieCarousel extends Component {
     </ol>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src="./img/ca2.png" className="d-block w-100" alt="..." />
+        <img src="./img/ca2.png" className="d-block w-100 " alt="..." />
         
         <div className="overlay" />
       </div>
       <div className="carousel-item">
-        <img src="./img/ca1.jpg" className="d-block w-100" alt="..." />
+        <img src="./img/ca1.jpg" className="d-block w-100 " alt="..." />
         
         <div className="overlay" />
       </div>
       <div className="carousel-item">
-        <img src="./img/ca3.jpg" className="d-block w-100" alt="..." />
+        <img src="./img/ca3.jpg" className="d-block w-100 " alt="..." />
        
         <div className="overlay" />
       </div>

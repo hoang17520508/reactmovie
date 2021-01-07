@@ -175,7 +175,7 @@ export const xoaFilmAction= (maPhim)=>{
     {
         
         console.log(err);  
-        Swal.fire('Thông báo ','Xóa Thành công','error'); 
+        Swal.fire('Thông báo ','Xóa thất bại','error'); 
         
     }
     

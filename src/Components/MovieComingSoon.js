@@ -27,7 +27,7 @@ export default function MovieComingSoon(props)  {
               </span>
             </p>
             <p>A dramatization of the April 2010 disaster, when the offshore drilling rig Deepwater Horizon exploded and created the worst oil spill in U.S. history.</p>
-            <a href="#">MORE INFO <i className="fa fa-angle-right" /></a>
+            {/* <a href="#">MORE INFO <i className="fa fa-angle-right" /></a> */}
           </div>
         </div>
         <div className="col-6 col-xs-12 ">

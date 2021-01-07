@@ -51,6 +51,7 @@ export default class QuanLyPhim extends Component {
             console.log(err.response.data);
             Swal.fire('Thông báo ','Thêm thất bại','error');
         })
+       
 
     }
     
@@ -78,9 +79,9 @@ export default class QuanLyPhim extends Component {
                         <input name="trailer" className="form-control" onChange={this.handleChange} />
                     </div>
                     </div>
-                    <div className="form-group">
+                    <div className="form-group" id="inputhinh">
                         <label>Hình ảnh</label>
-                        <input type="file" name="hinhAnh" className="form-control" onChange={this.handleChange} />
+                        <input  type="file" name="hinhAnh" className="form-control" onChange={this.handleChange}  />
                     </div>
                     <div className="form-group">
                         <label>Mô tả</label>
@@ -90,8 +91,10 @@ export default class QuanLyPhim extends Component {
                         <label>Mã nhóm</label>
                         <input name="maNhom" value="GP01" className="form-control" onChange={this.handleChange}/>
                     </div>
+                   <div className="text-center">
+                   <button style={{width:'50%'}} type="submit " className="form-control btn btn-success   ">Submit</button>
+                   </div>
                    
-                    <button type="submit" className="form-control">Submit</button>
 
                 </form>
               

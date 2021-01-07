@@ -89,6 +89,10 @@ outline: none;
 margin-left: 20px;
 
 }
+.carousel-item img{
+  display: block;
+  height: 650px;
+}
 #carouselMovie .overlay{
   position: absolute;
   top: 0;
@@ -495,7 +499,7 @@ width: 100%;
   padding: 0;
   margin: 0;
   height: 800px;
-
+  
   
   
 }
@@ -525,7 +529,15 @@ width: 100%;
 }
 .bg_history{
   background-image: url('./assets/background.jpg');
+  opacity: 1;
   background-size: cover;
   background-repeat: no-repeat;
   
+}
+#root_history{
+  background-color: rgba(0, 0, 0, 0.397);
+}
+#inputhinh input{
+  background-color: transparent;
+  border: none;
 }

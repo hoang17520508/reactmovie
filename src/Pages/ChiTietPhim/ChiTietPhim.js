@@ -38,14 +38,14 @@ export default function ChiTietPhim(props) {
         })
         }
     return (
-        <div style={{ marginTop: '100px', backgroundColor: 'rgb(10, 32, 41)', paddingBottom: '50px' }}>
+        <div style={{ paddingTop: '150px', backgroundColor: 'rgb(8, 2, 18)', paddingBottom: '50px',opacity:'1' }}>
             <div className="container " >
                 <div className="row">
-                    <div className="col-8">
-                        <img src={chiTietPhim.hinhAnh} alt={chiTietPhim.hinhAnh} style={{ width: '200px', height: '300px' }} />
+                    <div className="col-4">
+                        <img src={chiTietPhim.hinhAnh} alt={chiTietPhim.hinhAnh} style={{ width: '300px', height: '400px',border:'none' }} />
                     </div>
-                    <div className="col-4 ">
-                        <table className="table text-light">
+                    <div className="col-8 ">
+                        <table className="table text-light" style={{fontSize:'15px'}}>
                             <tr>
                                 <td>Film Name:</td>
                                 <td>{chiTietPhim.tenPhim}</td>
@@ -63,8 +63,8 @@ export default function ChiTietPhim(props) {
                         </table>
                     </div>
                 </div>
-                <div className="row mt-5" style={{}}>
-                    <div className="col-12 text-danger " style={{ fontSize: '25px' }}>
+                <div className="row mt-2" style={{}}>
+                    <div className="col-12 text-danger mb-2 " style={{ fontSize: '30px' }}>
                         Thông Tin Lịch Chiếu
                 </div>
 
@@ -115,8 +115,9 @@ export default function ChiTietPhim(props) {
                                                  {/* {heThongRap.tenHeThongRap} */}
 
                                                  {heThongRap.cumRapChieu?.map((cumRap, index) => {
+                                                      
                                                      return <div key={index}>
-                                                         <h3 className="text-success  " style={{ fontWeight: 'bold' }}>
+                                                         <h3 className="text-success text-left" style={{ fontSize:'20px', fontWeight: 'bold' }}>
                                                              {cumRap.tenCumRap}
                                                          </h3>
                                                          <div className="row">
