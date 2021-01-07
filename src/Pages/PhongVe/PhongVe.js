@@ -74,6 +74,8 @@ export default function PhongVe(props) {
     }
     else{
         Swal.fire('Thông báo ','Đăng nhập để tiếp tục','warning');
+        props.history.replace('/login');
+        window.location.reload();// xoa danh sach ghe dang dat di
     }
 }} className="btn btn-success w-100 p-4" style={{fontSize:'25px'}}>Đặt Vé</button>
 
