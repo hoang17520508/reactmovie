@@ -48,9 +48,9 @@ export default function PhongVe(props) {
         </Fragment>
     })} </div>
 </div>
-<div className="col-4 text-center mt-4" style={{fontSize:'17px'}}>{danhSachGheDangDat.reduce((tongTien,gheDangDat,index)=>{
-    return tongTien+= gheDangDat.giaVe;
-},0).toLocaleString() } VND <div/>
+<div className="col-4 text-center mt-4" style={{fontSize:'25px'}}><h2 style={{color:'red'}}>{danhSachGheDangDat.reduce((tongTien,gheDangDat,index)=>{
+    return tongTien+= gheDangDat.giaVe
+},0).toLocaleString() } VND </h2> <div/>
 <hr/>
 <h1 className="text-dark">{thongTinPhongVe.thongTinPhim?.tenPhim}</h1>
 <hr/>
